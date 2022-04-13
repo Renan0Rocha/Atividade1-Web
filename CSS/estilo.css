@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(78, 45, 45);
+    overflow: hidden;
+  }
+  
+#lbnome {
+float: left;
+color: #ffffff;
+text-align: center;
+padding: 20px 24px;
+text-decoration: none;
+font-size: 20px;
+font-family: 'Work Sans', sans-serif;
+}
+
+h1{
+    text-align: center;
+    text-decoration: dashed;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    background-color: #c4d2ff;
+    overflow: hidden;
+    padding: 30px 24px;
+}
+
+h2{
+    background-color: #000000;
+    overflow: hidden;
+    padding: 5px 5px;
+}
+
+  /* Desenvolve os links dentro da barra de navegação */
+  .topnav a {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  /* Alterar a cor dos links ao passar o mouse */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Adicionar uma cor ao link ativo */
+  .topnav a.active {
+    background-color: #2b5cfd;
+    color: white;
+  }

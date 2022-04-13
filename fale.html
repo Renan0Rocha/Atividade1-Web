@@ -1,1 +1,86 @@
-sdas
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Renan da Rocha Santos">
+    <meta name="Description" content="Renan">
+    <meta name="keywords" content="Renan Informática">
+    <title>Renan Informática</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+</head>
+    <body>    
+        <nav class="topnav">
+            <label id="lbnome">RENAN INFORMÁTICA</label>
+            <a class="active" href="sobre">Sobre</a>
+            <a href="fale.html">Fale Conosco</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="index.html">Home</a>
+        </nav>
+
+        <form action="processa.php">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" />
+                </p>
+                <p>
+                    <label for="email">E-mail: </label>
+                    <input type="text" name="email" id="email" />
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Formulário de Opnião</legend>
+                <strong>O que você achou do site?</strong>
+                <dl>
+                    <dd>
+                        <input type="radio" name="avaliacao" value="muitobom" checked> Muito Bom
+                        <input type="radio" name="avaliacao" value="bom"> Bom
+                        <input type="radio" name="avaliacao" value="regular"> Regular
+                        <input type="radio" name="avaliacao" value="umlixo"> Um lixo!
+                    </dd>
+                </dl>
+            <p>
+                <strong> Qual seção você mais gostou? </strong>
+                <dl>
+                    <dd>
+                        <select name="secao" size="1">
+                            <option value="emcartaz"> Em Cartaz </option>
+                            <option value="trilhasonora"> Trilha Sonora </option>
+                            <option value="fotos"> Galeria de Fotos </option>
+                            <option value="bilheteria"> Bilheteria </option>
+                            <option value="outra"> Outra </option>
+                        </select>
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                <strong>Digite seus comentários no campo abaixo </strong>
+                <dl>
+                    <dd>
+                        <textarea name="comentarios" cols="42" rows="10"> </textarea>
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                <dl>
+                    <dd>
+                        <input type="checkbox" name="novidades" value="nov"> Quero receber novidades do site por email.
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                <dl>
+                    <dd>
+                        <input type="submit" value="Enviar dados">
+                        <input type="reset" value="Limpar formulário">
+                    </dd>
+                </dl>
+            </p>
+            </fieldset>
+        </form>
+    </body>
+</html>
