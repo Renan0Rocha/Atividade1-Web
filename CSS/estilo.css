@@ -25,8 +25,8 @@ font-family: 'Work Sans', sans-serif;
 h1{
     text-align: center;
     text-decoration: dashed;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 37px;
     background-color: #c4d2ff;
     overflow: hidden;
     padding: 30px 24px;
@@ -42,21 +42,42 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
-table th {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 30px;
-  margin: 10px;
+
+table, th, td {
+  border: 1px solid;
 }
 
-#titletable {
+.tableser {
   font-family: 'Work Sans', sans-serif;
   font-size: 20px;
+  align-items: center;
+  text-align: center;
+  align-content: center;
 }
 
-#logo{
+#logo {
   margin: auto;
   display: block;
 }
+
+.imgstop{
+  width: 100%;
+  height: 340px;
+}
+
+#img1 {
+  width: 33.2%;
+  height: 340px;
+}
+#img2 {
+  width: 33.1%;
+  height: 340px;
+}
+#img3 {
+  width: 33.1%;
+  height: 340px;
+}
+
   /* Desenvolve os links dentro da barra de navegação */
   .topnav a {
     float: right;
