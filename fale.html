@@ -19,48 +19,50 @@
             <a href="index.html">Home</a>
         </nav>
 
-        <form action="envio_mensagem.php" method="get">
-            <fieldset>
-                <legend>Envie uma mensagem preenchendo o formulario abaixo:</legend>
-                <p>
-                    <label for="nome">Seu Nome: </label>
-                    <input type="text" name="nome" id="nome" />
-                </p>
-                <p>
-                    <label for="telefone">Seu Telefone </label>
-                    <input type="text" name="telefone" id="telefone" />
-                </p>
-                <p>
-                    <label for="email">Seu Email </label>
-                    <input type="text" name="email" id="email"/>
-                </p>
-            </fieldset>
+        <div class="Container">
+            <form action="envio_mensagem.php" method="get">
+                <fieldset>
+                    <legend>Envie uma mensagem preenchendo o formulario abaixo:</legend>
+                    <p>
+                        <label for="nome">Seu Nome: </label>
+                        <input type="text" name="nome" id="nome" />
+                    </p>
+                    <p>
+                        <label for="telefone">Seu Telefone </label>
+                        <input type="text" name="telefone" id="telefone" />
+                    </p>
+                    <p>
+                        <label for="email">Seu Email </label>
+                        <input type="text" name="email" id="email"/>
+                    </p>
+                </fieldset>
 
-            <fieldset>
-                <label for="text">Deseja receber nossas novidades?</label>
-                <dl>
-                    <dd>
-                        <input type="radio" name="novidade" value="sim" checked> Sim
-                        <input type="radio" name="novidade" value="nao"> Não
-                    </dd>
-                </dl>
-            <p>
-                <strong>Envie sua mensagem no campo abaixo:</strong>
-                <dl>
-                    <dd>
-                        <textarea name="comentarios" cols="42" rows="10"> </textarea>
-                    </dd>
-                </dl>
-            </p>
-            <p>
-                <dl>
-                    <dd>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar">
-                    </dd>
-                </dl>
-            </p>
-            </fieldset>
-        </form>
+                <fieldset>
+                    <label for="text">Deseja receber nossas novidades?</label>
+                    <dl>
+                        <dd>
+                            <input type="radio" name="novidade" value="sim" checked> Sim
+                            <input type="radio" name="novidade" value="nao"> Não
+                        </dd>
+                    </dl>
+                <p>
+                    <strong>Envie sua mensagem no campo abaixo:</strong>
+                    <dl>
+                        <dd>
+                            <textarea name="comentarios" cols="42" rows="10"> </textarea>
+                        </dd>
+                    </dl>
+                </p>
+                <p>
+                    <dl>
+                        <dd>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                        </dd>
+                    </dl>
+                </p>
+                </fieldset>
+            </form>
+        </div>
     </body>
 </html>

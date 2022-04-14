@@ -32,7 +32,7 @@ h1{
     padding: 30px 24px;
 }
 
-h2{
+#rectangleblue {
     background-color: #000000;
     overflow: hidden;
     padding: 5px 5px;
@@ -52,7 +52,10 @@ table, th, td {
   font-size: 20px;
   align-items: center;
   text-align: center;
-  align-content: center;
+  width: 900px;
+  height: 700;
+  margin-top: 200px;
+  margin-left: 500px;
 }
 
 #logo {
