@@ -19,46 +19,33 @@
             <a href="index.html">Home</a>
         </nav>
 
-        <form action="processa.php">
+        <form action="envio_mensagem.php" method="get">
             <fieldset>
-                <legend>Dados Pessoais</legend>
+                <legend>Envie uma mensagem preenchendo o formulario abaixo:</legend>
                 <p>
-                    <label for="nome">Nome: </label>
+                    <label for="nome">Seu Nome: </label>
                     <input type="text" name="nome" id="nome" />
                 </p>
                 <p>
-                    <label for="email">E-mail: </label>
-                    <input type="text" name="email" id="email" />
+                    <label for="telefone">Seu Telefone </label>
+                    <input type="text" name="telefone" id="telefone" />
+                </p>
+                <p>
+                    <label for="email">Seu Email </label>
+                    <input type="text" name="email" id="email"/>
                 </p>
             </fieldset>
 
             <fieldset>
-                <legend>Formulário de Opnião</legend>
-                <strong>O que você achou do site?</strong>
+                <label for="text">Deseja receber nossas novidades?</label>
                 <dl>
                     <dd>
-                        <input type="radio" name="avaliacao" value="muitobom" checked> Muito Bom
-                        <input type="radio" name="avaliacao" value="bom"> Bom
-                        <input type="radio" name="avaliacao" value="regular"> Regular
-                        <input type="radio" name="avaliacao" value="umlixo"> Um lixo!
+                        <input type="radio" name="novidade" value="sim" checked> Sim
+                        <input type="radio" name="novidade" value="nao"> Não
                     </dd>
                 </dl>
             <p>
-                <strong> Qual seção você mais gostou? </strong>
-                <dl>
-                    <dd>
-                        <select name="secao" size="1">
-                            <option value="emcartaz"> Em Cartaz </option>
-                            <option value="trilhasonora"> Trilha Sonora </option>
-                            <option value="fotos"> Galeria de Fotos </option>
-                            <option value="bilheteria"> Bilheteria </option>
-                            <option value="outra"> Outra </option>
-                        </select>
-                    </dd>
-                </dl>
-            </p>
-            <p>
-                <strong>Digite seus comentários no campo abaixo </strong>
+                <strong>Envie sua mensagem no campo abaixo:</strong>
                 <dl>
                     <dd>
                         <textarea name="comentarios" cols="42" rows="10"> </textarea>
@@ -68,15 +55,8 @@
             <p>
                 <dl>
                     <dd>
-                        <input type="checkbox" name="novidades" value="nov"> Quero receber novidades do site por email.
-                    </dd>
-                </dl>
-            </p>
-            <p>
-                <dl>
-                    <dd>
-                        <input type="submit" value="Enviar dados">
-                        <input type="reset" value="Limpar formulário">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
                     </dd>
                 </dl>
             </p>
