@@ -11,110 +11,128 @@
     <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
 </head>
 <body>
-    <nav class="topnav">
-        <label id="lbnome">RENAN INFORMÁTICA</label>
-        <a class="active" href="sobre">Sobre</a>
-        <a href="fale.html">Fale Conosco</a>
-        <a href="cadastro.html">Cadastro</a>
-        <a href="index.html">Home</a>
-    </nav>
+    <div>
+        <nav class="topnav">
+            <label id="lbnome">RENAN INFORMÁTICA</label>
+            <a class="active" href="fale.html">Fale Conosco</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="index.html">Home</a>
+        </nav>
 
-    <form action="dados_cadastro.php" method="post">
-        <fieldset>
-            <legend>Cadastre-se com uma conta Grátis!</legend>
-            <p>
-                <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome" />
-            </p>
-            <p>
-                <label for="sobrenome">Sobrenome: </label>
-                <input type="text" name="sobrenome" id="sobrenome" />
-            </p>
-            <p>
-                <label for="sexo">Sexo: </label>
-                <select name="sexo">
-                    <option value="em">Masculino</option>
-                    <option value="nt">Feminino</option>
-                    <option value="ns">Prefiro Não Informar</option>
-                </select>
-            </p>
-            <p>
-                <label for="endereco">Endereço: </label>
-                <input type="text" name="endereco" id="endereco" />
-                <label for="numero">Número: </label>
-                <input type="text" name="numero" id="numero" />
-                <label for="complemento">Complemento </label>
-                <input type="text" name="complemento" id="complemento" />
-            </p>
-            <p>
-                <label for="estado">Estado</label>
-                <select name="estado">
-                    <option value="em">Acre</option>
-                    <option value="nt">Alagoas</option>
-                    <option value="nt">Amapá</option>
-                    <option value="nt">Amazonas</option>
-                    <option value="nt">Bahia</option>
-                    <option value="nt">Ceará</option>
-                    <option value="nt">Distrito Federal</option>
-                    <option value="nt">Espírito Santo</option>
-                    <option value="nt">Goiás</option>
-                    <option value="nt">Maranhão</option>
-                    <option value="nt">Mato Grosso</option>
-                    <option value="nt">Mato Grosso do Sul</option>
-                    <option value="nt">Minas Gerais</option>
-                    <option value="nt">Pará</option>
-                    <option value="nt">Paraíba</option>
-                    <option value="nt">Paraná</option>
-                    <option value="nt">Pernambuco</option>
-                    <option value="nt">Piauí</option>
-                    <option value="nt">Rio de Janeiro</option>
-                    <option value="nt">Rio Grande do Norte</option>
-                    <option value="nt">Rio Grande do Sul</option>
-                    <option value="nt">Rondônia</option>
-                    <option value="nt">Roraima</option>
-                    <option value="nt">Santa Catarina</option>
-                    <option value="nt">São Paulo</option>
-                    <option value="nt">Sergipe</option>
-                    <option value="nt">Tocantins</option>
-                </select>
-                <label for="cidade">Cidade: </label>
-                <input type="text" name="cidade" id="cidade" />
-            </p>
-            <p>
-                <label for="cep">CEP </label>
-                <input type="cep" name="cep" id="cep"/>
-            </p>
-        </fieldset>
+        <div class="formcad">
+            <form action="dados_cadastro.php" method="post">
+                    <legend id="titlecad" >Cadastre-se com uma conta Grátis!</legend>
+                    <p>
+                        <div>
+                            <label for="nome">Nome: </label>
+                            <input type="text" placeholder="Digite seu primeiro nome:" name="nome" id="nome" required/>
+                        </div>
+                    </p>
+                    <p>
+                        <div>
+                            <label for="sobrenome">Sobrenome: </label>
+                            <input type="text" name="sobrenome" placeholder="Digite seu sobrenome:" id="sobrenome" required/>
+                        </div>
+                    </p>
+                    <p>
+                        <div>
+                            <label for="sexo">Sexo: </label>
+                            <select name="sexo" required>
+                                <option value="em">Masculino</option>
+                                <option value="nt">Feminino</option>
+                                <option value="ns">Prefiro Não Informar</option>
+                            </select>
+                        </div>
+                    </p>
+                    <p>
+                        <div>
+                            <label for="endereco">Endereço: </label>
+                            <input type="text" name="endereco" placeholder="Digite seu endereço" id="endereco" required />
+                            <label for="numero">Número: </label>
+                            <input type="text" name="numero" placeholder="Digite o número" id="numero" required />
+                            <label for="complemento">Complemento </label>
+                            <input type="text" name="complemento" id="complemento" />
+                        </div>
+                    </p>
+                    <p>
+                        <div>
+                            <label for="estado">Estado</label>
+                            <select name="estado">
+                                <option value="em">Acre</option>
+                                <option value="nt">Alagoas</option>
+                                <option value="nt">Amapá</option>
+                                <option value="nt">Amazonas</option>
+                                <option value="nt">Bahia</option>
+                                <option value="nt">Ceará</option>
+                                <option value="nt">Distrito Federal</option>
+                                <option value="nt">Espírito Santo</option>
+                                <option value="nt">Goiás</option>
+                                <option value="nt">Maranhão</option>
+                                <option value="nt">Mato Grosso</option>
+                                <option value="nt">Mato Grosso do Sul</option>
+                                <option value="nt">Minas Gerais</option>
+                                <option value="nt">Pará</option>
+                                <option value="nt">Paraíba</option>
+                                <option value="nt">Paraná</option>
+                                <option value="nt">Pernambuco</option>
+                                <option value="nt">Piauí</option>
+                                <option value="nt">Rio de Janeiro</option>
+                                <option value="nt">Rio Grande do Norte</option>
+                                <option value="nt">Rio Grande do Sul</option>
+                                <option value="nt">Rondônia</option>
+                                <option value="nt">Roraima</option>
+                                <option value="nt">Santa Catarina</option>
+                                <option value="nt">São Paulo</option>
+                                <option value="nt">Sergipe</option>
+                                <option value="nt">Tocantins</option>
+                            </select>
+                            <label for="cidade">Cidade: </label>
+                            <input type="text" name="cidade" placeholder="Digite sua cidade" id="cidade" required/>
+                        </div>
+                    </p>
+                    <p>
+                        <div>
+                            <label for="cep">CEP </label>
+                            <input type="cep" name="cep" placeholder="Digite seu CEP" id="cep" required/>
+                        </div>
+                    </p>
+                    <p>
+                        <label for="text">Deseja realizar autenticação por duas etapas?</label>
+                        <div>
+                            <dl>
+                                <dd>                       
+                                        <input type="radio" name="autenticacao" value="sim" checked> Sim
+                                        <input type="radio" name="autenticacao" value="nao"> Não
+                                        <input type="radio" name="autenticacao" value="maistarde"> Mais Tarde                            
+                                </dd>
+                            </dl>
+                        </div>
+                    </p>
+                        <div>
+                            <label for="text">Quais são as suas preferências de serviços?</label>
+                            <dl>
+                                <dd>
+                                    <input type="checkbox" name="preferencia" value="manutencao"> Manutenção
+                                    <input type="checkbox" name="preferencia" value="audio"> Aúdio
+                                    <input type="checkbox" name="preferencia" value="refrigeracao"> Refrigeração
+                                    <input type="checkbox" name="preferencia" value="video"> Vídeo
+                                    <input type="checkbox" name="preferencia" value="instalacao"> Instalação
 
-        <fieldset>
-            <label for="text">Quais são as suas preferências de serviços?</label>
-            <dl>
-                <dd>
-                    <input type="checkbox" name="preferencia" value="manutencao"> Manutenção
-                    <input type="checkbox" name="preferencia" value="audio"> Aúdio
-                    <input type="checkbox" name="preferencia" value="refrigeracao"> Refrigeração
-                    <input type="checkbox" name="preferencia" value="video"> Vídeo
-                    <input type="checkbox" name="preferencia" value="instalacao"> Instalação
-
-                </dd>
-            </dl>
-        <p>
-            <strong>Envie sua mensagem no campo abaixo:</strong>
-            <dl>
-                <dd>
-                    <textarea name="comentarios" cols="42" rows="10"> </textarea>
-                </dd>
-            </dl>
-        </p>
-        <p>
-            <dl>
-                <dd>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </dd>
-            </dl>
-        </p>
-        </fieldset>
-    </form>
+                                </dd>
+                            </dl>
+                        </div>
+                <p>
+                    <div>
+                        <dl>
+                            <dd>
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Limpar">
+                            </dd>
+                        </dl>
+                    </div>
+                </p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
